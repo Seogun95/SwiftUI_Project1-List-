@@ -44,7 +44,6 @@ struct Characters: View {
             VStack(alignment:.leading) {
                 Text("이름 : \(person.name)")
                 Text("나이 : \(person.age)세")
-                Text("키 : \(String(format: "%.2f", person.height))cm")
             }
         }
     }

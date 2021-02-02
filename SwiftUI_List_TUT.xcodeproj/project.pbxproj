@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6C2DF73425C99DDE00D91FDE /* CharacterDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C2DF73325C99DDE00D91FDE /* CharacterDetail.swift */; };
 		6C9D8B3825C887FA00ED721E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C9D8B3725C887FA00ED721E /* AppDelegate.swift */; };
 		6C9D8B3A25C887FA00ED721E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C9D8B3925C887FA00ED721E /* SceneDelegate.swift */; };
 		6C9D8B3C25C887FA00ED721E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C9D8B3B25C887FA00ED721E /* ContentView.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6C2DF73325C99DDE00D91FDE /* CharacterDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetail.swift; sourceTree = "<group>"; };
 		6C9D8B3425C887FA00ED721E /* SwiftUI_List_TUT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUI_List_TUT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C9D8B3725C887FA00ED721E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6C9D8B3925C887FA00ED721E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,10 +41,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		6C9D8B2B25C887FA00ED721E = {
+		6C2DF73625C9A59A00D91FDE /* View */ = {
 			isa = PBXGroup;
 			children = (
 				6C9D8B4F25C8896300ED721E /* Person.swift */,
+				6C2DF73325C99DDE00D91FDE /* CharacterDetail.swift */,
+				6C9D8B3B25C887FA00ED721E /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6C9D8B2B25C887FA00ED721E = {
+			isa = PBXGroup;
+			children = (
+				6C2DF73625C9A59A00D91FDE /* View */,
 				6C9D8B3625C887FA00ED721E /* SwiftUI_List_TUT */,
 				6C9D8B3525C887FA00ED721E /* Products */,
 			);
@@ -61,7 +73,6 @@
 			children = (
 				6C9D8B3725C887FA00ED721E /* AppDelegate.swift */,
 				6C9D8B3925C887FA00ED721E /* SceneDelegate.swift */,
-				6C9D8B3B25C887FA00ED721E /* ContentView.swift */,
 				6C9D8B3D25C887FD00ED721E /* Assets.xcassets */,
 				6C9D8B4225C887FD00ED721E /* LaunchScreen.storyboard */,
 				6C9D8B4525C887FD00ED721E /* Info.plist */,
@@ -150,6 +161,7 @@
 			files = (
 				6C9D8B3825C887FA00ED721E /* AppDelegate.swift in Sources */,
 				6C9D8B3A25C887FA00ED721E /* SceneDelegate.swift in Sources */,
+				6C2DF73425C99DDE00D91FDE /* CharacterDetail.swift in Sources */,
 				6C9D8B3C25C887FA00ED721E /* ContentView.swift in Sources */,
 				6C9D8B5025C8896300ED721E /* Person.swift in Sources */,
 			);
