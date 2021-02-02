@@ -10,6 +10,8 @@ import SwiftUI
 struct CharacterDetail: View {
     
     let person: Person
+    @State private var zoomed: Bool = false
+    @State private var animationAmount = 0.0
     
     var body: some View {
         VStack(alignment: .center) {
@@ -17,7 +19,18 @@ struct CharacterDetail: View {
                 .resizable()
                 .aspectRatio(contentMode: .fill)
                 .frame(width: 340, height: 340)
-                .cornerRadius(30)
+                //zoomed가 true이면 170, false이면 10
+                .cornerRadius(self.zoomed ? 170 : 10)
+                //클릭시 주는 효과
+                .onTapGesture {
+                    withAnimation(.interpolatingSpring(stiffness: 100, damping: 50)) {
+                        self.zoomed.toggle()
+                        self.animationAmount += 360
+                    }
+                }
+                .rotation3DEffect(
+                    .degrees(animationAmount),
+                    axis: (x: 0.0, y: 1.0, z: 0.0))
             
             VStack {
                 HStack {
@@ -39,7 +52,9 @@ struct CharacterDetail: View {
                 .font(.system(size: 23))
             }
         }
-    }
+         //네비게이션타이틀을 사용할때 (person.name)을 사용하려면 항상 text매개변수가 와야한다.
+        .navigationBarTitle("지브리 스튜디오 '\(person.name)'",displayMode: .inline)
+    } 
 }
 
 struct CharacterDetail_Previews: PreviewProvider {
