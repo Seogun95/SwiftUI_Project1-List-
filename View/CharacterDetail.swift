@@ -15,8 +15,8 @@ struct CharacterDetail: View {
         VStack(alignment: .center) {
             Image(person.imageURL)
                 .resizable()
-                .aspectRatio(contentMode: .fit)
-                .frame(width: 340)
+                .aspectRatio(contentMode: .fill)
+                .frame(width: 340, height: 340)
                 .cornerRadius(30)
             
             VStack {

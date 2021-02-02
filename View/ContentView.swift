@@ -15,7 +15,7 @@ struct ContentView: View {
         
         NavigationView {
             List(self.people, id: \.name) { person in
-                NavigationLink(destination: Text(person.name)) {
+                NavigationLink(destination: CharacterDetail(person:person)) {
                     Characters(person: person)
                 }
             }
